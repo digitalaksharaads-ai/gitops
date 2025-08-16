@@ -1,0 +1,57 @@
+Build and release
+SCM - Software Configuration Manager
+DevOPs- Developer Operations
+SRE - Site Reliable Engneer
+
+
+--------------------------------------------------------------------------------------------------
+
+
+VCS --- Version Control System( SCM => Source Code Management)
+
+
+git ==> github, gitlab
+
+
+git ===>
+
+git init --- Initializing the git repository
+git status  --- Check files status
+git add . --- Untracked files moved into tracked files
+git commit -m "subject" => check/commit all the changes into repository
+git config ===> local setup configuration
+git log --oneline => list all the commits
+
+
+p4 => perforce
+
+
+
+Code Review tool :;
+
+CICD -- Continuous Integration and Contious Deployment
+Build Tool
+Bug tracking Tool
+
+Advance DevOPs
+
+
+Shell scripting => Automation Purpose
+
+Real scenarios---
+
+
+
+Linux commands:
+
+
+file rename ===
+
+
+mv existing_filename required_filename
+
+
+
+
+
+-----==========================================>
