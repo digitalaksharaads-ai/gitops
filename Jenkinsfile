@@ -8,7 +8,6 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'mingw32-make clean'
                 bat 'mingw32-make'
             }
         }
