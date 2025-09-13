@@ -36,8 +36,8 @@ pipeline {
         stage('Upload to JFrog') {
             steps {
                 bat """
-                    jfrog rt upload "build\\*.exe" %ARTIFACT_REPO% --build-name=${BUILD_NAME} --build-number=${params.VERSION}
-                    jfrog rt build-publish ${BUILD_NAME} ${params.VERSION}
+                    "C:\\jfrog\\jf.exe" rt upload "build\\*.exe" %ARTIFACT_REPO% --build-name=${BUILD_NAME} --build-number=${params.VERSION}
+                    C:\\jfrog\\jf.exe" rt build-publish ${BUILD_NAME} ${params.VERSION}
                 """
             }
         }
