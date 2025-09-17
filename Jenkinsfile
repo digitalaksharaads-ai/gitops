@@ -36,8 +36,7 @@ pipeline {
         stage('Upload to JFrog') {
             steps {
                 bat """
-                    "C:\\jfrog\\jf.exe" rt upload "build\\*.exe" %ARTIFACT_REPO% --build-name=${BUILD_NAME} --build-number=${params.VERSION}
-                    C:\\jfrog\\jf.exe" rt build-publish ${BUILD_NAME} ${params.VERSION}
+					curl -udigitalaksharaads@gmail.com:cmVmdGtuOjAxOjE3ODkwNjY0OTc6ZWxoc0FBd1pYOFZEY0M4b3VyNEh5OFZra2RF -T app_${BUILD_NAME}_ {params.VERSION}.exe "https://trial0vs3c7.jfrog.io/artifactory/digital-generic-local/app_${BUILD_NAME}_ {params.VERSION}.exe"
                 """
             }
         }
