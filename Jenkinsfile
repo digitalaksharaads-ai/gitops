@@ -36,7 +36,7 @@ pipeline {
         stage('Upload to JFrog') {
             steps {
                 bat """
-					curl -udigitalaksharaads@gmail.com:cmVmdGtuOjAxOjE3ODkwNjY0OTc6ZWxoc0FBd1pYOFZEY0M4b3VyNEh5OFZra2RF -T app_${BUILD_NAME}_ {params.VERSION}.exe "https://trial0vs3c7.jfrog.io/artifactory/digital-generic-local/app_${BUILD_NAME}_ {params.VERSION}.exe"
+					curl -udigitalaksharaads@gmail.com:cmVmdGtuOjAxOjE3ODkwNjY0OTc6ZWxoc0FBd1pYOFZEY0M4b3VyNEh5OFZra2RF -T app.exe "https://trial0vs3c7.jfrog.io/artifactory/digital-generic-local/app_{params.VERSION}.exe"
                 """
             }
         }
