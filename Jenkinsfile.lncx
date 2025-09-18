@@ -1,0 +1,31 @@
+pipeline {
+    agent {
+        docker { image 'gcc:12' }   // docker image with gcc + make
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'make clean && make'
+            }
+        }
+
+        stage('Test Run') {
+            steps {
+                sh './app'
+            }
+        }
+    }
+
+    post {
+        always {
+            archiveArtifacts artifacts: 'app', fingerprint: true
+        }
+    }
+}
