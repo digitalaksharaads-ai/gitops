@@ -8,3 +8,7 @@ Raise PR on github with from feature branch to main
 --------------------------
 
 git pull origin main
+Single commit or changes revert === git revert <commit-id>
+Multiple commit single quick remove ---> git reset --hard <commit-id>
+
+
