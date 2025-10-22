@@ -7,3 +7,4 @@ git push origin feature
 Raise PR on github with from feature branch to main
 --------------------------
 
+git pull origin main
